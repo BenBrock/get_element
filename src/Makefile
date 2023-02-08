@@ -4,7 +4,7 @@ CXX = g++
 SOURCES += $(wildcard *.cpp)
 TARGETS := $(patsubst %.cpp, %, $(SOURCES))
 
-CXXFLAGS = -std=c++23
+CXXFLAGS = -std=c++23 -I../include
 
 all: $(TARGETS)
 
